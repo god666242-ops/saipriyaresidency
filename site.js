@@ -1,0 +1,269 @@
+import { I, sizeOf } from "./images";
+
+// [src, alt, width, height] for the uncropped "Take a look" gallery
+const ph = (src, alt, pos) => [src, alt, ...sizeOf(src), pos];
+import { FAQ } from "./content";
+// Edit this file for each hotelier. Everything on the page comes from here.
+// `hotels` = the two properties (hero, contact, maps, booking widgets, nearby places, directions). Everything else is shared content.
+export const hotels = [
+  {
+    slug: "sai-priya-residency",
+    name: "Sai Priya Residency",
+    short: "Sai Priya",
+    city: "Mangalagiri, Guntur district",
+    locality: "Mangalagiri",
+    pin: "522503",
+    address:
+      "Near Over Bridge, Tenali Bus Stop, N.H., Mangalagiri, Guntur Dist. 522503",
+    phones: [
+      { show: "91211 50222", tel: "+919121150222" },
+      { show: "91211 50111", tel: "+919121150111" },
+    ],
+    mapQuery: "Sai Priya Residency Mangalagiri",
+    mapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.9638082222205!2d80.5754450749121!3d16.42666438430613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f1b1f90b93d5%3A0xc6d22d4f9f1f7231!2ssai%20priya%20residency!5e0!3m2!1sen!2sin!4v1794932609065!5m2!1sen!2sin",
+    tagline:
+      "In the centre of Vijayawada, Guntur, Mangalagiri and Tenali, near the over bridge on the N.H.",
+    image: I.saiPriya,
+    imagePos: "center 90%",
+    gallery: [
+      ph("/images/5021.jpg", "Sai Priya Residency building"),
+      ph("/images/5024.jpg", "Reception desk", "center 58%"),
+      ph("/images/4945.jpg", "Double room with AC and wall art"),
+      ph("/images/4948.jpg", "Double bed room with purple bedspread"),
+      ph("/images/4951.jpg", "Room with TV, wardrobe and window"),
+      ph("/images/5000.jpg", "Double bed room with AC"),
+    ],
+    trust: ["Open 24 hours", "Free Wi-Fi", "Hot water", "Power backup"],
+    nearbyNote: "Distances from the hotel in Mangalagiri.",
+    nearby: [
+      ["Panakala Swami Temple", "1 km", "Temple"],
+      ["Laxmi Narasimha Swamy Temple", "1 km", "Temple"],
+      ["VJ Degree College", "1 km", "College"],
+      ["Mangalagiri Railway Station", "1.5 km", "Railway"],
+      ["AIIMS", "2 km", "Hospital"],
+      ["NRI Hospital", "2 km", "Hospital"],
+      ["Nagarjuna University", "3 km", "University"],
+      ["KLU", "3 km", "University"],
+      ["SRM University", "7 km", "University"],
+      ["Vijayawada PNBS and Railway Station", "10 km", "Bus and rail"],
+      ["Kanaka Durga Amma Temple", "11 km", "Temple"],
+      ["Prakasam Barrage", "12 km", "Sightseeing"],
+      ["Bhavani Island", "12 km", "Sightseeing"],
+      ["Amaravati", "26 km", "Sightseeing"],
+    ],
+    reach: [
+      ["Mangalagiri Railway Station", "About 1.5 km from Sai Priya Residency."],
+      [
+        "Vijayawada PNBS and Railway Station",
+        "About 10 km from Sai Priya Residency.",
+      ],
+    ],
+    uses: [
+      [
+        "Students and parents",
+        "KLU, Nagarjuna University, SRM University and VJ Degree College are all close to Sai Priya Residency.",
+      ],
+      [
+        "Hospital visits",
+        "AIIMS and NRI Hospital are both 2 km from Sai Priya Residency.",
+      ],
+      [
+        "Pilgrims",
+        "Panakala Swami Temple, Laxmi Narasimha Swamy Temple in Mangalagiri is 1 km away, and Kanaka Durga Amma Temple in Vijayawada is 11 km away.",
+      ],
+      [
+        "Train travellers",
+        "Mangalagiri Railway Station is 1.5 km away. Vijayawada Railway Station is 10 km.",
+      ],
+      [
+        "Sightseeing",
+        "Prakasam Barrage and Bhavani Island are 12 km away, and Amaravati is 26 km.",
+      ],
+    ],
+  },
+  {
+    slug: "hotel-vijay-international",
+    name: "Hotel Vijay International",
+    short: "Vijay International",
+    city: "Nellore",
+    locality: "Subedarpet",
+    pin: "524001",
+    address:
+      "D.No.7/761, near Bose Bomma Statue, Kapatipalem, Subedarpet, Nellore, Andhra Pradesh 524001",
+    phones: [
+      { show: "81858 57891", tel: "+918185857891" },
+      { show: "96037 89891", tel: "+919603789891" },
+    ],
+    mapQuery: "Hotel Vijay International AC Lodge Nellore",
+    mapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.4772376579285!2d79.9877075890983!3d14.457263789463536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8d7f87843ffd%3A0x9a3663478477d0ba!2sHotel%20Vijay%20International%20AC%20Lodge!5e0!3m2!1sen!2sin!4v1794932647324!5m2!1sen!2sin",
+    tagline: "An AC lodge near Bose Bomma Statue, Subedarpet, Nellore.",
+    image: I.vijay,
+    imagePos: "center 95%",
+    gallery: [
+      ph("/images/5027.jpg", "Hotel Vijay International building"),
+      ph("/images/5018.jpg", "Lobby and seating area", "center 50%"),
+      ph("/images/5007.jpg", "Corridor to the rooms", "center 55%"),
+      ph("/images/5009.jpg", "Room with TV and ceiling fan"),
+      ph("/images/5011.jpg", "Double room with wardrobe"),
+      ph("/images/5013.jpg", "Room with TV and writing desk"),
+      ph("/images/5016.jpg", "Double room with AC"),
+    ],
+    trust: ["Open 24 hours", "Free Wi-Fi", "Hot water", "Power backup"],
+    nearbyNote: "Distances from the hotel in Nellore.",
+    nearby: [
+      ["Nellore Railway Station", "1 km", "Railway"],
+      ["Atmakur Bus Stand", "1.5 km", "Bus"],
+      ["Sri Thalpagiri Ranganatha Swamy Temple", "2 km", "Temple"],
+      ["VR College", "2.5 km", "College"],
+      ["Sri Mulastaneswara Swamy Temple", "3 km", "Temple"],
+      ["Nellore APSRTC Main Bus Stand", "3.5 km", "Bus"],
+      ["Medicover Hospitals", "4 km", "Hospital"],
+      ["Apollo Speciality Hospital", "4.5 km", "Hospital"],
+      ["Narayana Medical College & Hospital", "5 km", "Hospital"],
+      ["Sri Raja Rajeswari Ammavari Temple", "6 km", "Temple"],
+      ["Vedagiri Laxmi Narasimha Swamy Temple", "14 km", "Sightseeing"],
+      ["Vikrama Simhapuri University", "16 km", "University"],
+      ["Mypadu Beach", "24 km", "Sightseeing"],
+      ["Penchalakona Waterfalls", "75 km", "Sightseeing"],
+      ["Nelapattu Bird Sanctuary", "80 km", "Sightseeing"],
+    ],
+    reach: [
+      [
+        "Nellore Railway Station",
+        "About 1 km from Hotel Vijay International AC Lodge.",
+      ],
+      [
+        "Atmakur Bus Stand",
+        "About 1.5 km from Hotel Vijay International AC Lodge.",
+      ],
+      [
+        "Nellore APSRTC Main Bus Stand",
+        "About 3.5 km from Hotel Vijay International AC Lodge.",
+      ],
+    ],
+    uses: [
+      [
+        "Students and parents",
+        "VR College is 2.5 km away, and Vikrama Simhapuri University is 16 km from Hotel Vijay International.",
+      ],
+      [
+        "Hospital visits",
+        "Medicover (4 km), Apollo Speciality (4.5 km) and Narayana Medical College & Hospital (5 km) are all nearby.",
+      ],
+      [
+        "Pilgrims",
+        "Sri Thalpagiri Ranganatha Swamy Temple is 2 km away, and Sri Mulastaneswara Swamy Temple is 3 km.",
+      ],
+      [
+        "Train and bus travellers",
+        "Nellore Railway Station is 1 km away, Atmakur Bus Stand is 1.5 km, and APSRTC Main Bus Stand is 3.5 km.",
+      ],
+      [
+        "Sightseeing",
+        "Mypadu Beach is 24 km away, and Penchalakona Waterfalls and Nelapattu Bird Sanctuary make easy day trips.",
+      ],
+    ],
+  },
+];
+
+export const brand = {
+  name: "Sai Priya Residency and Hotel Vijay International",
+  short: "Sai Priya & Vijay",
+  url: "https://example.com",
+  embed: { primary: "#12355b", theme: "light", label: "Reserve now" },
+  headline: "Two hotels, one simple stay. Mangalagiri and Nellore.",
+  tag: "Clean rooms with hot water and free Wi-Fi. Choose your hotel and book direct.",
+  desc: "Sai Priya Residency in Mangalagiri (between Vijayawada, Guntur and Tenali) and Hotel Vijay International AC Lodge in Nellore. Both open 24 hours. AC and Non-AC rooms. Book direct.",
+  stats: [
+    ["2 hotels", "Mangalagiri and Nellore"],
+    ["24 hours", "open at both hotels"],
+    ["AC and Non-AC", "choose what fits your budget"],
+    ["Free Wi-Fi", "and hot water in every room"],
+  ],
+  about: [
+    "Sai Priya Residency sits in the centre of Vijayawada, Guntur, Mangalagiri and Tenali, near the over bridge on the National Highway. Hotel Vijay International is our AC lodge in Nellore, near Bose Bomma Statue in Subedarpet.",
+    "Both hotels offer the same three room types, from a simple Non-AC double room to a deluxe AC suite with a separate bedroom and hall. Book direct online, or call us if you need help choosing.",
+  ],
+  why: [
+    "Open 24 hours at both hotels",
+    "Free Wi-Fi",
+    "Hot water",
+    "Power backup",
+  ],
+  rooms: [
+    {
+      name: "Standard Non-AC",
+      ac: false,
+      beds: "Double bed",
+      img: I.roomNonAc,
+      pos: "center 75%",
+      desc: "A simple double room with an attached bathroom.",
+      perks: [
+        "Attached bathroom",
+        "Hot water",
+        "Ceiling fan",
+        "TV",
+        "Free Wi-Fi",
+      ],
+    },
+    {
+      name: "Standard AC",
+      ac: true,
+      beds: "Double bed",
+      img: I.roomAc,
+      pos: "center 70%",
+      desc: "The same double room, with air conditioning.",
+      perks: [
+        "Attached bathroom",
+        "Hot water",
+        "Ceiling fan",
+        "AC",
+        "TV",
+        "Free Wi-Fi",
+      ],
+    },
+    {
+      name: "Suite Deluxe AC",
+      ac: true,
+      beds: "Double bed and single bed",
+      img: I.roomSuite,
+      pos: "center 70%",
+      desc: "A deluxe AC suite with a separate bedroom and hall, and a sofa.",
+      perks: [
+        "Bedroom and hall",
+        "Attached bathroom",
+        "Hot water",
+        "Sofa",
+        "Ceiling fan",
+        "AC",
+        "TV",
+      ],
+    },
+  ],
+  facilities: [
+    ["❄️", "AC and Non-AC rooms", "Pick the room that suits your budget."],
+    ["🚿", "Hot water", "In the attached bathroom of every room."],
+    ["📶", "Free Wi-Fi", "Included with your stay."],
+    ["📺", "TV", "In every room."],
+    ["🔌", "Power backup", "Available at both hotels."],
+    ["🕐", "Open 24 hours", "At both hotels."],
+    ["🛁", "Attached bathroom", "In every room."],
+    ["🌀", "Ceiling fan", "In every room."],
+  ],
+  aboutImages: [
+    [I.reception, "Reception desk"],
+    [I.lobby, "Lobby and seating area"],
+  ],
+  info: [
+    ["Hotels", "Mangalagiri and Nellore"],
+    ["Front desk", "Both hotels are open 24 hours"],
+    ["Wi-Fi", "Free"],
+    ["Hot water", "In every room"],
+    ["Power backup", "At both hotels"],
+    ["Breakfast", "Depends on the room type and package"],
+  ],
+  faq: FAQ,
+};
+export const s = brand;
