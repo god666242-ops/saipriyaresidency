@@ -16,6 +16,10 @@ export const FAQ = [
     "Yes. Every room has an attached bathroom with hot water, a TV and a ceiling fan, and Wi-Fi is free.",
   ],
   [
+    "Is there a banquet hall?",
+    "Yes. Sai Priya Residency in Mangalagiri has a banquet hall. Call 91211 50222 / 91211 50111 to ask about booking it for your event.",
+  ],
+  [
     "Is the front desk open all day?",
     "Yes. Both hotels are open 24 hours and have power backup.",
   ],
